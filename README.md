@@ -5,7 +5,7 @@ The application is a simple barang’s directory app which allows users to see t
 Solution here is simple – having the paging information in a URI query as follows: 
 
 | Action        | Url           | Desc  				|
-| ------------- |:-------------:| --------------------:	|
+| ------------- |:-------------:| ---------------------:|
 | GET      		| /barangs 		| get all barang 		|
 | GET      		| /barang/{id}  | get barang by Id 		|
 | POST 			| /barang      	| post new barang 		|
@@ -13,9 +13,11 @@ Solution here is simple – having the paging information in a URI query as foll
 
 
 Repository Spring Boot
+```java
 	public interface BarangRepository extends PagingAndSortingRepository<Barang, Long>{ }
+```
 
-
+```typescript
 Pagination interface in angular
 	export interface PaginationPage<T> {
 	    content? : Array<T>;
@@ -27,5 +29,5 @@ Pagination interface in angular
 	    itemsPerPage?: number;
 	    sort?: Array<PaginationPropertySort>;
 	}
-
+```
 
