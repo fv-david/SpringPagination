@@ -17,8 +17,8 @@ Repository Spring Boot
 	public interface BarangRepository extends PagingAndSortingRepository<Barang, Long>{ }
 ```
 
-```typescript
 Pagination interface in angular
+```typescript
 	export interface PaginationPage<T> {
 	    content? : Array<T>;
 	    last?: boolean;
